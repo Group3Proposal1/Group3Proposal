@@ -55,9 +55,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Group 3 Proposal 2" id="zc6-W7-e9D"/>
                     <connections>
-                        <segue destination="lEX-Bn-K54" kind="show" id="q1Z-Dt-f3N"/>
-                        <segue destination="cXW-MP-Ote" kind="show" id="C0C-40-24k"/>
-                        <segue destination="udA-jA-088" kind="show" id="AFm-0P-vKg"/>
+                        <segue destination="lEX-Bn-K54" kind="show" identifier="toMember" id="q1Z-Dt-f3N"/>
+                        <segue destination="cXW-MP-Ote" kind="show" identifier="toProject" id="C0C-40-24k"/>
+                        <segue destination="udA-jA-088" kind="show" identifier="toImage" id="AFm-0P-vKg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YAo-hg-xoF" sceneMemberID="firstResponder"/>
@@ -111,7 +111,7 @@
         <!--Project View Controller-->
         <scene sceneID="5P8-qE-JYG">
             <objects>
-                <viewController id="cXW-MP-Ote" customClass="ProjectViewController" sceneMemberID="viewController">
+                <viewController id="cXW-MP-Ote" customClass="ProjectViewController" customModule="Group3Proposal2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xgc-V1-Mlh">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -168,7 +168,7 @@
         <!--Image View Controller-->
         <scene sceneID="iH0-MO-i7h">
             <objects>
-                <viewController id="udA-jA-088" customClass="ImageViewController" sceneMemberID="viewController">
+                <viewController id="udA-jA-088" customClass="ImageViewController" customModule="Group3Proposal2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5h8-Lu-Eax">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
