@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-	let members = [("Cooper Faesy", "Roles go here"), ("Noah Kellinghaus", "Roles go here"), ("Ryne Webster", "Roles go here")]
+	let members = [("Cooper Faesy", "Roles go here", "Notes go here"), ("Noah Kellinghaus", "Roles go here", "Notes go here"), ("Ryne Webster", "Roles go here", "Notes go here")]
 	let projectDescription = [("Frontend", "Buttons for each dice type. ex. d12 or d20"), ("Backend", "Random number gen for each die"), ("UI design", "Simple design to fit DND style")]
 	let preview = ["Project Image"]
 	
@@ -22,6 +22,7 @@ extension ViewController: UITableViewDataSource {
 		return 3
 	}
 	
+    
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		print("#1.",#function)
 		switch section {

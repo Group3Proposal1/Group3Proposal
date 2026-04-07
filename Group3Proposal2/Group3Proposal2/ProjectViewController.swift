@@ -14,7 +14,6 @@ class ProjectViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		print("Project screen loaded")
 		if let project = project {
 			titleLabel.text = project.0
 			descriptionLabel.text = project.1
