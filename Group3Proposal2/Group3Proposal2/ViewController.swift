@@ -8,8 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-	let members = [("Cooper Faesy", "Roles go here", "Notes go here"), ("Noah Kellinghaus", "Roles go here", "Notes go here"), ("Ryne Webster", "Roles go here", "Notes go here")]
-	let projectDescription = [("Frontend", "Buttons for each dice type. ex. d12 or d20"), ("Backend", "Random number gen for each die"), ("UI design", "Simple design to fit DND style")]
+	let members = [("Cooper Faesy", "Main code developer and bug fixes", "Handles most of the main code and logic for app"), ("Noah Kellinghaus", "Main UI designer and bug fixes", "Handles most of the UI design and layout for the app"), ("Ryne Webster", "Code developer, UI designer, and bug fixes", "Backup code and UI designer to fix mistakes or check the code and UI for additional additons")]
+	let projectDescription = [("Frontend", "Clean UI and buttons for each dice type. ex.d4, d6, d8, d10, d12, d20"), ("Backend", "Random number gen for each die"), ("UI design", "Simple design to fit DND style")]
 	let preview = ["Project Image"]
 	
 	override func viewDidLoad() {

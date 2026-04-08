@@ -12,6 +12,6 @@ class ImageViewController: ViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		imageView.image = UIImage(named: "DO NOT HAVE IMAGE YET")
+		imageView.image = UIImage(named: "d20-icon-22")
 	}
 }
