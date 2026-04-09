@@ -21,7 +21,18 @@ extension ViewController: UITableViewDataSource {
 	func numberOfSections(in tableView: UITableView) -> Int {
 		return 3
 	}
-	
+    
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        if let header = view as? UITableViewHeaderFooterView {
+            header.textLabel?.textColor = .white
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
+        if let header = view as? UITableViewHeaderFooterView {
+            header.textLabel?.textColor = .white
+        }
+    }
     
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		print("#1.",#function)
@@ -73,6 +84,9 @@ extension ViewController: UITableViewDataSource {
 	}
 	
 	func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        if let header = view as? UITableViewHeaderFooterView {
+            header.textLabel?.textColor = .white
+        }
 		switch section {
 		case 0:
 			return "\(members.count) members"

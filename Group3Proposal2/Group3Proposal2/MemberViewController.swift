@@ -15,6 +15,16 @@ class MemberViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+        
+        nameLabel.layer.cornerRadius = 10
+        nameLabel.layer.masksToBounds = true
+        
+        roleLabel.layer.cornerRadius = 10
+        roleLabel.layer.masksToBounds = true
+        
+        notesLabel.layer.cornerRadius = 10
+        notesLabel.layer.masksToBounds = true
+        
 		if let member = members {
 			nameLabel.text = member.0
 			roleLabel.text = member.1

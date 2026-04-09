@@ -14,6 +14,13 @@ class ProjectViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+        
+        titleLabel.layer.cornerRadius = 10
+        titleLabel.layer.masksToBounds = true
+        
+        descriptionLabel.layer.cornerRadius = 10
+        descriptionLabel.layer.masksToBounds = true
+        
 		if let project = project {
 			titleLabel.text = project.0
 			descriptionLabel.text = project.1

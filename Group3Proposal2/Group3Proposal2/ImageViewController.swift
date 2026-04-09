@@ -12,6 +12,10 @@ class ImageViewController: ViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+        
+        imageView.layer.cornerRadius = 15
+        imageView.layer.masksToBounds = true
+        
 		imageView.image = UIImage(named: "d20-icon-22")
 	}
 }
